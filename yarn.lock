@@ -425,6 +425,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.50.tgz#1e0caa9364d3fccd2931c3ed96fdbeaa5d4cca83"
   integrity sha512-C6N5s2ZFtuZRj54k2/zyRhNDjJwwcViAM3Nbm8zjBpbqAdZ00mr0CFxvSKeO8Y/e03WVFLpQMdHYVfUd6SB+Hw==
 
+"@types/jquery@^1.10.39":
+  version "1.10.39"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-1.10.39.tgz#af673ad37955ecddc1457ce06c96a108bff953e7"
+  integrity sha512-vY3MK/wp1XxEhXzmtFk0Ce5x2Y6PEVXz6hoCooe364O4OdFZVb5XT/qgHmflF/SHD0tDtCejvP9qolCYfX7XWA==
+
 "@types/json-schema@*", "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"

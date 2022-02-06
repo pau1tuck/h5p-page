@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "moduleResolution": "Node",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "noEmit": true,
+        "strict": true,
+        "removeComments": false,
+        "skipLibCheck": true,
+        "allowJs": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.js",
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
