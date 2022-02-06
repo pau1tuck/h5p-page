@@ -1,6 +1,8 @@
-const path = require("path");
+var path = require("path");
+var nodeEnv = process.env.NODE_ENV || "development";
+var isDev = nodeEnv !== "production";
 
-module.exports = {
+var config = {
   mode: nodeEnv,
   entry: {
     dist: "./src/entries/main.js",
@@ -35,3 +37,9 @@ module.exports = {
     jquery: "H5P.jQuery",
   },
 };
+
+if (isDev) {
+  config.devtool = "inline-source-map";
+}
+
+module.exports = config;
