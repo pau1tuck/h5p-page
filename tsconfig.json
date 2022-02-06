@@ -1,14 +1,9 @@
 {
     "compilerOptions": {
+        "module": "commonjs",
         "target": "es5",
-        "module": "esnext",
-        "moduleResolution": "Node",
-        "lib": [
-            "dom",
-            "dom.iterable",
-            "esnext"
-        ],
         "noEmit": true,
+        "sourceMap": true,
         "strict": true,
         "removeComments": false,
         "skipLibCheck": true,
