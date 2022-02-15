@@ -1,0 +1,13 @@
+{
+  "title": "Page",
+  "description": "A single page that can display various content types",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "fullscreen": 1,
+  "author": "Paul Tuck @pau1tuck",
+  "license": "MIT",
+  "machineName": "H5P.Page",
+  "embedTypes": ["iframe"]
+}

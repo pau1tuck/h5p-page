@@ -4,13 +4,11 @@ reports
 tests
 dev
 src
-.eslintrc.json
 .idea
 .git
 .babelrc
 .gitmodules
 .h5pignore
-.sass-lint.yml
 .travis.yml
 karma.conf.js
 webpack.config.js
@@ -18,6 +16,11 @@ webpack.dev.config.js
 README.md
 CONTRIBUTING.md
 package.json
-package-lock.json
 worknotes
-LICENSE
+releases/
+tsconfig.json
+postcss.config.js
+tslint.json
+.gitignore
+package-lock.json
+.vscode
