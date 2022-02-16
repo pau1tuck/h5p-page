@@ -4,12 +4,14 @@
   "machineName": "H5P.Page",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 0,
+  "patchVersion": 1,
   "runnable": 1,
-  "fullscreen": 1,
   "author": "Paul Tuck @pau1tuck",
-  "license": "MIT",
-  "embedTypes": ["div", "iframe"],
+  "license": "cc-by-sa",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 0
+  },
   "preloadedDependencies": [
     {
       "machineName": "FontAwesome",
@@ -26,6 +28,5 @@
       "majorVersion": 1,
       "minorVersion": 3
     }
-  ],
-  "editorDependencies": []
+  ]
 }
