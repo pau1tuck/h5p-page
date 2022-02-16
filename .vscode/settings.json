@@ -1,4 +1,10 @@
 {
+    "eslint.validate": [
+        "html",
+        "javascript",
+        "typescript",
+        "typescriptreact"
+    ],
     "json.schemas": [
         {
             "fileMatch": [
