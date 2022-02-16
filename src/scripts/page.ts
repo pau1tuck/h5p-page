@@ -36,6 +36,8 @@ class Page extends H5P.EventDispatcher {
     this.shouldAutoplay = [];
     this.l10n = config.l10n;
 
+    this.mainWrapper = null;
+
     // Hello, World constructor
     const username: string =
       (H5PIntegration && H5PIntegration.user && H5PIntegration.user.name) ||
@@ -48,10 +50,42 @@ class Page extends H5P.EventDispatcher {
      *
      * @param {jQuery} $wrapper Content's container.
      */
+    /*
     this.createContent = (): void => {
       const content = document.createElement("div");
       content.classList.add("h5p-hello-world");
       content.appendChild(this.myElement);
+    };
+    */
+    /**
+     * Attach library to wrapper
+     * @param {jQuery} $wrapper
+     */
+    this.attach = ($wrapper: any) => {
+      this.mainWrapper = $wrapper;
+      // Needed to enable scrolling in fullscreen
+      $wrapper.addClass("h5p-hello-world");
+
+      if (this.isEdge18orEarlier()) {
+        $wrapper.addClass("edge-18");
+        $wrapper.append(this.myElement);
+      }
+    };
+
+    /**
+     * Checks if browser is IE Edge version 18 or earlier
+     */
+    this.isEdge18orEarlier = () => {
+      const ua = window.navigator.userAgent;
+      const edgeIndex = ua.indexOf("Edge/");
+      if (edgeIndex < 0) {
+        return false;
+      }
+      const edgeVersion = ua.substring(
+        edgeIndex + 5,
+        ua.indexOf(".", edgeIndex)
+      );
+      return parseInt(edgeVersion, 10) <= 18;
     };
   }
 

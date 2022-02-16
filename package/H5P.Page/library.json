@@ -1,0 +1,41 @@
+{
+  "title": "Page",
+  "description": "A single page that can display various content types",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "fullscreen": 1,
+  "author": "Paul Tuck @pau1tuck",
+  "license": "MIT",
+  "machineName": "H5P.Page",
+  "embedTypes": ["div", "iframe"],
+  "preloadedJs": [
+    {
+      "path": "dist/main.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/main.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Column",
+      "majorVersion": 1,
+      "minorVersion": 14
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ],
+  "editorDependencies": []
+}

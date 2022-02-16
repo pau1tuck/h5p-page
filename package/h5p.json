@@ -1,0 +1,15 @@
+{
+  "title": "Page",
+  "language": "en",
+  "author": "Paul Tuck @pau1tuck",
+  "license": "MIT",
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.Page",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ],
+  "mainLibrary": "H5P.Page",
+  "embedTypes": ["div", "iframe"]
+}
