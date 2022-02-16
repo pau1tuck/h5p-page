@@ -24,7 +24,7 @@ const config = {
     ),
   ],
   entry: {
-    dist: "./src/entries/main.js",
+    dist: "./src/entries/main.ts",
   },
   output: {
     filename: "h5p-page.js",
@@ -51,13 +51,29 @@ const config = {
       },
       {
         test: /\.jpg|\.jpeg|\.png$|\.svg/,
-        include: path.join(__dirname, "src/images"),
-        loader: "file-loader?name=images/[name].[ext]",
+        include: path.join(__dirname, "src/assets/images"),
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 1000,
+              name: "assets/images/[name].[ext]",
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-        include: path.resolve(__dirname, "src/fonts"),
-        loader: "file-loader?name=fonts/[name].[ext]",
+        include: path.resolve(__dirname, "src/assets/fonts"),
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 1000,
+              name: "assets/fonts/[name].[ext]",
+            },
+          },
+        ],
       },
     ],
   },
