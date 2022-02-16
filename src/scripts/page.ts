@@ -1,9 +1,3 @@
-/* interface IInstance {
-  config: any;
-  contentId: string;
-  contentData: any;
-} */
-
 class Page extends H5P.EventDispatcher {
   private parent: any;
   private behaviour: any;

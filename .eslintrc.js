@@ -7,6 +7,7 @@ module.exports = {
   },
   settings: {},
   extends: [
+    "eslint:recommended",
     "airbnb-typescript-prettier",
     // "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
@@ -14,7 +15,6 @@ module.exports = {
   rules: {
     "brace-style": ["error", "stroustrup"],
     "class-methods-use-this": [1],
-    "class-name": [1],
     "comma-spacing": ["error", { before: false, after: true }],
     curly: [0],
     eqeqeq: [2, "smart"],
@@ -24,11 +24,8 @@ module.exports = {
     "lines-between-class-members": [0],
     "max-classes-per-file": [1],
     "no-console": ["error", { allow: ["warn", "error"] }],
-    "no-duplicate-variable": [2],
     "no-extra-boolean-cast": "off",
-    "no-unused-expression": [1],
     "no-restricted-globals": [2, "event"],
-    "no-unused-variable": [1],
     "react/prop-types": 0,
     semi: [2, "always"],
     "space-before-blocks": "error",
