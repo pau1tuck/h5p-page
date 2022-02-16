@@ -1,1 +1,1 @@
-class PageContent extends H5P.EventDispatcher {}
+export default class PageContent extends H5P.EventDispatcher {}

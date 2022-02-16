@@ -324,6 +324,13 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
   integrity sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==
 
+"@h5p-types/h5p-core@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@h5p-types/h5p-core/-/h5p-core-0.2.0.tgz#13aad80e44cc734c0cd5035ad0172596c3e23a1c"
+  integrity sha512-vc+JwXZjoJ9xQH0fLUQK6KJTg6dyEp88Hold7g6CMZAOFiyXlxPPia4nYlysSw68Zl1gITrbpgE8q+4kih+l/g==
+  dependencies:
+    "@types/jquery" "^3.5.11"
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
@@ -446,10 +453,12 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.50.tgz#1e0caa9364d3fccd2931c3ed96fdbeaa5d4cca83"
   integrity sha512-C6N5s2ZFtuZRj54k2/zyRhNDjJwwcViAM3Nbm8zjBpbqAdZ00mr0CFxvSKeO8Y/e03WVFLpQMdHYVfUd6SB+Hw==
 
-"@types/jquery@^1.10.39":
-  version "1.10.39"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-1.10.39.tgz#af673ad37955ecddc1457ce06c96a108bff953e7"
-  integrity sha512-vY3MK/wp1XxEhXzmtFk0Ce5x2Y6PEVXz6hoCooe364O4OdFZVb5XT/qgHmflF/SHD0tDtCejvP9qolCYfX7XWA==
+"@types/jquery@^3.5.11":
+  version "3.5.13"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.13.tgz#5482d3ee325d5862f77a91c09369ae0a5b082bf3"
+  integrity sha512-ZxJrup8nz/ZxcU0vantG+TPdboMhB24jad2uSap50zE7Q9rUeYlCF25kFMSmHR33qoeOgqcdHEp3roaookC0Sg==
+  dependencies:
+    "@types/sizzle" "*"
 
 "@types/json-schema@*", "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.9"
@@ -475,6 +484,11 @@
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
+
+"@types/sizzle@*":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
+  integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
 
 "@typescript-eslint/eslint-plugin@^5.10.2":
   version "5.10.2"

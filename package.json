@@ -21,7 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.0",
     "@babel/preset-typescript": "^7.16.7",
-    "@types/jquery": "^1.10.39",
+    "@h5p-types/h5p-core": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
     "babel-loader": "^8.2.3",
