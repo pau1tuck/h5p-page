@@ -1,3 +1,9 @@
+interface Instance {
+  config: any;
+  contentId: string;
+  contentData: any;
+}
+
 export default class PageContent extends H5P.EventDispatcher {
   private parent: any;
   private behaviour: any;
@@ -49,9 +55,9 @@ export default class PageContent extends H5P.EventDispatcher {
   /**
    * Create Column instances
    *
-   * @param {object} config Parameters
-   * @param {number} contentId Content id
-   * @param {object} contentData Content data
+   * @param {object} config // Parameters
+   * @param {number} contentId
+   * @param {object} contentData
    */
-  private createColumns(config, contentId, contentData) {}
+  private createColumns(config, contentId, contentData): void {}
 }
