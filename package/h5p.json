@@ -2,7 +2,8 @@
   "title": "Page",
   "language": "en",
   "author": "Paul Tuck @pau1tuck",
-  "license": "MIT",
+  "license": "CC BY-SA",
+  "licenseVersion": "4.0",
   "preloadedDependencies": [
     {
       "machineName": "H5P.Page",

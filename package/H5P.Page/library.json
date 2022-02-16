@@ -1,6 +1,7 @@
 {
   "title": "Page",
   "description": "A single page that can display various content types",
+  "machineName": "H5P.Page",
   "majorVersion": 1,
   "minorVersion": 0,
   "patchVersion": 0,
@@ -8,18 +9,7 @@
   "fullscreen": 1,
   "author": "Paul Tuck @pau1tuck",
   "license": "MIT",
-  "machineName": "H5P.Page",
   "embedTypes": ["div", "iframe"],
-  "preloadedJs": [
-    {
-      "path": "dist/main.js"
-    }
-  ],
-  "preloadedCss": [
-    {
-      "path": "dist/main.css"
-    }
-  ],
   "preloadedDependencies": [
     {
       "machineName": "FontAwesome",
