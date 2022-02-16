@@ -26,11 +26,11 @@ class Page extends H5P.EventDispatcher {
   constructor(
     config: any,
     contentId: string,
-    contentData: any = {},
     parent: any,
     params: any,
     MyElement: HTMLElement,
-    createContent: any
+    createContent: any,
+    contentData: any = {}
   ) {
     super();
     this.parent = parent;
@@ -43,7 +43,7 @@ class Page extends H5P.EventDispatcher {
     this.l10n = config.l10n;
 
     // Hello, World constructor
-    let username =
+    const username: string =
       (H5PIntegration && H5PIntegration.user && H5PIntegration.user.name) ||
       "World";
     this.myElement = document.createElement("div");
