@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     "brace-style": ["error", "stroustrup"],
     "class-methods-use-this": [1],
+    "comma-dangle": [0],
     "comma-spacing": ["error", { before: false, after: true }],
     curly: [0],
     eqeqeq: [2, "smart"],

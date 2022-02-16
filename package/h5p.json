@@ -1,7 +1,7 @@
 {
   "title": "Page",
   "language": "en",
-  "author": "Tutorial user",
+  "author": "Paul Tuck @pau1tuck",
   "license": "CC BY-SA",
   "licenseVersion": "4.0",
   "authors": [
@@ -18,6 +18,5 @@
     }
   ],
   "mainLibrary": "H5P.Page",
-  "machineName": "H5P.Page",
   "embedTypes": ["div"]
 }
