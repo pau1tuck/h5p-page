@@ -1,5 +1,5 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+// import "core-js/stable";
+// import "regenerator-runtime/runtime";
 import Page from "../scripts/page";
 
 H5P = H5P || {};
