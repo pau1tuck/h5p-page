@@ -1,5 +1,5 @@
 {
-  "greeting": "Hello world",
+  "title": "Hello world",
   "image": {
     "path": "earth.jpg",
     "width": 300,

@@ -1,3 +1,4 @@
+import Content from "./content";
 interface IApp {
   config: any;
   contentId: number;
@@ -33,6 +34,8 @@ class Page extends H5P.EventDispatcher {
     this.params.behaviour.enableSolutionsButton = false;
     this.params.behaviour.enableRetry = false;
 
+    this.content = Content;
+
     /**
      * Attach library to wrapper
      * @param {jQuery} $wrapper
@@ -40,13 +43,18 @@ class Page extends H5P.EventDispatcher {
     this.attach = ($wrapper: any) => {
       this.mainWrapper = $wrapper;
       // Needed to enable scrolling in fullscreen
-      $wrapper.addClass("h5p-hello-world");
+      // $wrapper.addClass("h5p-page");
 
       if (this.isEdge18orEarlier()) {
         $wrapper.addClass("edge-18");
-        $wrapper.append(this.title);
       }
+
+      $wrapper.append(`<div class="title-text">${this.title}</div>`);
+
+      $wrapper.append(this.content.container);
+      this.$wrapper = $wrapper;
     };
+
     /**
      * Checks if browser is IE Edge version 18 or earlier
      */

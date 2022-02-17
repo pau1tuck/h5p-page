@@ -8,6 +8,7 @@
   "runnable": 1,
   "author": "Paul Tuck @pau1tuck",
   "license": "MIT",
+  "embedTypes": ["div", "iframe"],
   "coreApi": {
     "majorVersion": 1,
     "minorVersion": 0
