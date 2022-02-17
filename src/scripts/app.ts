@@ -1,4 +1,5 @@
 import Content from "./content";
+
 interface IApp {
   config: any;
   contentId: number;
@@ -40,19 +41,23 @@ class Page extends H5P.EventDispatcher {
      * Attach library to wrapper
      * @param {jQuery} $wrapper
      */
-    this.attach = ($wrapper: any) => {
-      this.mainWrapper = $wrapper;
+    this.attach = ($container: any) => {
+      this.mainWrapper = $container;
       // Needed to enable scrolling in fullscreen
       // $wrapper.addClass("h5p-page");
 
       if (this.isEdge18orEarlier()) {
-        $wrapper.addClass("edge-18");
+        $container.addClass("edge-18");
       }
 
-      $wrapper.append(`<div class="title-text">${this.title}</div>`);
+      $container.append(
+        `<div class="title-text">${this.params.titleField}</div>`,
+      );
+      $container.append(`<div class="title-text">${this.params.image}</div>`);
 
+      /*
       $wrapper.append(this.content.container);
-      this.$wrapper = $wrapper;
+      // this.$wrapper = $wrapper; */
     };
 
     /**

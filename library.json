@@ -12,5 +12,10 @@
   "coreApi": {
     "majorVersion": 1,
     "minorVersion": 0
-  }
+  },
+  "preloadedJs": [
+    {
+      "path": "h5p-page.js"
+    }
+  ]
 }
