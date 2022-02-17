@@ -14,7 +14,8 @@
     }
   ],
 
-      {
+  "preloadedDependencies": [
+    {
       "machineName": "FontAwesome",
       "majorVersion": 4,
       "minorVersion": 5
@@ -29,3 +30,4 @@
       "majorVersion": 1,
       "minorVersion": 3
     }
+  ]

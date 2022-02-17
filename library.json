@@ -7,26 +7,9 @@
   "patchVersion": 1,
   "runnable": 1,
   "author": "Paul Tuck @pau1tuck",
-  "license": "cc-by-sa",
+  "license": "MIT",
   "coreApi": {
     "majorVersion": 1,
     "minorVersion": 0
-  },
-  "preloadedDependencies": [
-    {
-      "machineName": "FontAwesome",
-      "majorVersion": 4,
-      "minorVersion": 5
-    },
-    {
-      "machineName": "H5P.Column",
-      "majorVersion": 1,
-      "minorVersion": 14
-    },
-    {
-      "machineName": "H5P.JoubelUI",
-      "majorVersion": 1,
-      "minorVersion": 3
-    }
-  ]
+  }
 }

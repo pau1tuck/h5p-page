@@ -1,12 +1,12 @@
 [
   {
-    label: "Title",
-    importance: "high",
-    name: "titleField",
-    type: "text",
-    widget: "textarea",
-    placeholder: "Page title",
-    default: "New Page",
-    description: "The title of the page",
-  },
-];
+    "label": "Title",
+    "importance": "high",
+    "name": "titleField",
+    "type": "text",
+    "widget": "textarea",
+    "placeholder": "Page title",
+    "default": "New Page",
+    "description": "The title of the page"
+  }
+]
