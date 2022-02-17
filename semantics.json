@@ -1,12 +1,12 @@
 [
   {
-    "label": "Text",
-    "importance": "high",
-    "name": "textField",
-    "type": "text",
-    "widget": "textarea",
-    "placeholder": "Hello, World!",
-    "default": "Hello, %username !",
-    "description": "Says hello to someone"
-  }
-]
+    label: "Title",
+    importance: "high",
+    name: "titleField",
+    type: "text",
+    widget: "textarea",
+    placeholder: "Page title",
+    default: "New Page",
+    description: "The title of the page",
+  },
+];

@@ -1,35 +1,37 @@
+interface IApp {
+  config: any;
+  contentId: number;
+  contentData: any;
+}
+
 class Page extends H5P.EventDispatcher {
-  /**
+  /*
    * @constructor for H5P.Page
    *
-   * @param {object} config // Parameters passed by the editor.
-   * @param {object} parent
-   * @param {object} params
-   * @param {object} [extras] Saved state, metadata, etc.
-   * @param {number|*} contentId
+   * @param {object} config
+   * @param {string} contentId
    * @param {object} contentData
-   * @param {object} mainWrapper
    */
-  constructor(
-    config: any,
-    contentId: number,
-    mainWrapper: any,
-    myElement: HTMLElement,
-    params: any,
-    parent: any,
-    contentData: any = {},
-  ) {
+  constructor(config: any, contentId: number, contentData = {}) {
     super();
     this.contentId = contentId;
-    this.params = params;
     this.mainWrapper = null;
 
     // Hello, World constructor
     const username: string =
       (H5PIntegration && H5PIntegration.user && H5PIntegration.user.name) ||
       "World";
-    this.myElement = document.createElement("div");
-    this.myElement.innerText = params.textField.replace("%username", username);
+    this.title = document.createElement("div");
+    this.title.innerText = params.titleField.replace("%username", username);
+
+    /*
+     * this.params.behaviour.enableSolutionsButton and this.params.behaviour.enableRetry
+     * are used by H5P's question type contract.
+     * @see {@link https://h5p.org/documentation/developers/contracts#guides-header-8}
+     * @see {@link https://h5p.org/documentation/developers/contracts#guides-header-9}
+     */
+    this.params.behaviour.enableSolutionsButton = false;
+    this.params.behaviour.enableRetry = false;
 
     /**
      * Attach library to wrapper
@@ -42,7 +44,7 @@ class Page extends H5P.EventDispatcher {
 
       if (this.isEdge18orEarlier()) {
         $wrapper.addClass("edge-18");
-        $wrapper.append(this.myElement);
+        $wrapper.append(this.title);
       }
     };
     /**

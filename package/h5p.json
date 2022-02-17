@@ -18,5 +18,6 @@
     }
   ],
   "mainLibrary": "H5P.Page",
+  "machineName": "H5P.Page",
   "embedTypes": ["div"]
 }
