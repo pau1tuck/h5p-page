@@ -19,7 +19,7 @@ const config = {
       {},
       {
         sourceMap: isDev,
-      }
+      },
     ),
   ],
   entry: {

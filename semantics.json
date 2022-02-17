@@ -10,6 +10,13 @@
     "description": "The title of the page"
   },
   {
+    "label": "Greeting text",
+    "name": "greeting",
+    "type": "text",
+    "default": "Hello world!",
+    "description": "The greeting text displayed to the end user."
+  },
+  {
     "label": "Card Image",
     "name": "image",
     "type": "image",
