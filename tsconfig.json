@@ -22,7 +22,8 @@
         ".eslintrc.js",
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "bkp.ts",
     ],
     "typeRoots": [
         "node_modules/@types",

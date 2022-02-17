@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack NODE_ENV='development' webpack --mode=development --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV='production' webpack --mode=production && cp library.json ./dist && cp semantics.json ./dist"
+    "build": "cross-env NODE_ENV='production' webpack --mode=production && cp library.json ./dist && cp semantics.json ./dist && cp ./dist/* ./package/H5P.Page/ && rm ./package/page.h5p && zip -r -D -X ./package/page.h5p ./package/*"
   },
   "repository": {
     "type": "git",

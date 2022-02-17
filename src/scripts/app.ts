@@ -12,7 +12,7 @@ class Page extends H5P.EventDispatcher {
    * @param {string} contentId
    * @param {object} contentData
    */
-  constructor(config: any, contentId: number, contentData = {}) {
+  constructor(config: any, contentId: number, params: any, contentData = {}) {
     super();
     this.contentId = contentId;
     this.mainWrapper = null;
