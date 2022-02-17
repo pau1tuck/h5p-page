@@ -6,9 +6,10 @@
   "insertPragma": false,
   "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
+  "parser": "typescript",
   "printWidth": 80,
   "proseWrap": "preserve",
-  "quoteProps": "as-needed",
+  "quoteProps": "preserve",
   "requirePragma": false,
   "semi": true,
   "singleQuote": false,
@@ -16,5 +17,16 @@
   "trailingComma": "all",
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
-  "parser": "typescript"
+
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "options": {
+        "parser": "json5",
+        "quoteProps": "preserve",
+        "singleQuote": false,
+        "trailingComma": "none"
+      }
+    }
+  ]
 }
