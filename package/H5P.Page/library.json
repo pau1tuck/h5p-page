@@ -15,7 +15,7 @@
   },
   "preloadedJs": [
     {
-      "path": "h5p-page.js"
+      "path": "dist/h5p-page.js"
     }
   ]
 }

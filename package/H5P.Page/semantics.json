@@ -2,7 +2,7 @@
   {
     "label": "Title",
     "importance": "high",
-    "name": "titleField",
+    "name": "textField",
     "type": "text",
     "widget": "textarea",
     "placeholder": "Page title",

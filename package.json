@@ -6,16 +6,13 @@
   "scripts": {
     "dev": "webpack NODE_ENV='development' webpack --mode=development --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV='production' webpack --mode=production && cp library.json ./dist && cp semantics.json ./dist && cp ./dist/* ./package/H5P.Page/ && rm ./package/page.h5p && cd package && zip -r -D -X page.h5p *"
+    "build": "cross-env NODE_ENV='production' webpack --mode=production && cp library.json ./package/H5P.Page/ && cp semantics.json ./package/H5P.Page/ && cp ./dist/* ./package/H5P.Page/dist/ && rm ./package/page.h5p && cd package && zip -r -D -X page.h5p *"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pau1tuck/h5p-page"
   },
-  "keywords": [
-    "h5p",
-    "library"
-  ],
+  "keywords": ["h5p", "library"],
   "author": "Paul Tuck @pau1tuck",
   "license": "MIT",
   "devDependencies": {
